@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-
-import store from './services/store'
 import App from "./App";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import store from './services/store';
 
 const darkTheme = createMuiTheme({
   palette: {

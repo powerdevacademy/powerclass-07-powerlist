@@ -47,14 +47,7 @@ const Signup = () => {
         alert('Usuário cadastrado com sucesso');
         history.push('/login');
     }).catch(err => err?.response?.data?.error || err)
-
-    //  dispatch(login(values, (res, err) => {
       setSubmitting(false);
-    //   if(err) {
-    //       alert(err);
-    //       return;
-    //   }
-    // }));
   };
 
   return (

@@ -70,11 +70,8 @@ const TodoForm = () => {
           <Paper  className={classes.root}>
             <Field
               name="item"
-              // label="O que você precisa fazer?"
               placeholder="O que você precisa fazer?"
               type="text"
-              // margin="normal"
-              // variant="outlined"
               required
               className={classes.input}
               component={InputBase}
