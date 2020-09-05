@@ -8,7 +8,7 @@ const routes = express.Router();
 
 routes.post('/login', UserController.login);
 
-routes.get('/todos', sessionCheck, TodoController.index);
+routes.get('/todos', [sessionCheck], TodoController.index);
 routes.post('/todos', sessionCheck, TodoController.create);
 routes.put('/todos/:id/toggle', sessionCheck, TodoController.toggle);
 routes.delete('/todos/:id', sessionCheck, TodoController.delete);
